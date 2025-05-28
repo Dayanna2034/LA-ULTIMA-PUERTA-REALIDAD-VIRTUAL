@@ -357,6 +357,7 @@ function animate() {
     carta.Mesh.rotation.y += 0.005;
   });
   renderer.render(scene, camera);
-  requestAnimationFrame(animate);
+  renderer.setAnimationLoop(animate);
+
 }
 animate();
